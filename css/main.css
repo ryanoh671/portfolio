@@ -50,13 +50,13 @@ li a:hover {
   text-decoration: none;
 }
 
-.project-img {
+#project-img {
   width: 20%;
   box-shadow: 7px 7px 5px #7b7b7b;
   margin-bottom: 100px;
 }
 
-.project-info {
+#project-info {
   text-align: center;
   padding: 50px;
 }
@@ -66,13 +66,21 @@ li a:hover {
 } */
 
 
-.icons {
+#icons {
   float: right;
   margin: 10px 20px;
 }
 
-.icons > a > img {
+#icons > a > img {
   width: 3vmin;
+}
+
+#icons > a > img:hover {
+  transform: scale(1.2);
+}
+
+#icons:hover > a {
+  text-decoration: none;
 }
 
 footer {
@@ -82,3 +90,18 @@ footer {
   bottom: 0;
 }
 
+#my-history {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+}
+
+#history-details {
+  /* display: grid; */
+}
+
+#work {
+  display: none;
+}
