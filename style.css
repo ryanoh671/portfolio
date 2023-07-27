@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/white\ background.jpeg");
+  background-image: url("images/white\ background.png");
   background-size: cover;
   background-position: center;
 }
@@ -64,3 +64,21 @@ li a:hover {
 .project {
   margin: 100px 0;
 } */
+
+
+.icons {
+  float: right;
+  margin: 10px 20px;
+}
+
+.icons > a > img {
+  width: 3vmin;
+}
+
+footer {
+  width: 100%;
+  display: block;
+  position: fixed;
+  bottom: 0;
+}
+
