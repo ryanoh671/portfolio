@@ -1,0 +1,15 @@
+#about-me {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/white\ background.avif");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+#about-me > img {
+  width: 15%;
+  border-radius: 50%;
+  opacity: .9;
+  /* border: 3px solid rgb(7, 54, 83); */
+}
