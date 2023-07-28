@@ -3,69 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>About Me</title>
   <link rel="stylesheet" href="css/main.css">
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <script defer src="js/main.js"></script>
 </head>
 <body>
-  <div>
-    <nav class="">
+  <section id="hero">
+    <nav>
       <div>
         <ul id="nav">
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <footer>
-      <div id="icons">
-        <a href="https://www.linkedin.com/in/ryan-oh-dev/" target="_blank">
-          <img src="images/linkedin icon.png" alt="">
-        </a>
-        &nbsp;  
-        <a href="https://github.com/ryanoh671" target="_blank">
-          <img src="images/github icon.png" alt="">
-        </a>
+    <div id="name-div">
+      <div id="name-title">
+        <h1>Ryan Oh</h1>
+        <p>Full Stack Developer</p>
+        <button><a href="#about-me">About me</a></button>
       </div>
-    </footer>
-  </div>
-  <div class="" id="about-me">
-    <img src="images/face shot.png" alt="">
-    <div class="container">
-      &nbsp;
-      <h2>About Me:</h2>
-      <p>Hey there! I'm Ryan Oh, a full-stack Software Engineer from the beautiful island of Guam. I pursued Business Economics at UC Irvine, where I found a fascination for numbers and math, ultimately leading me to the world of accounting. However, I craved a more engaging and creative outlet for my skills. This desire pushed me to explore software development, where I quickly fell in love with building innovative solutions that merge my passion for numbers and creativity.</p>
-      <p>When I'm not coding, you'll find me actively pursuing my fitness goals, as I strongly believe in leading a healthy lifestyle. I thrive on challenges and am always eager to expand my skill set and take on new projects. Let's collaborate and build something extraordinary together, making a difference through the power of software and innovation!</p>
     </div>
+  </section>
+  <section id="about-me">
+    <div class="" id="about-me-details">
+      <h2>About Me:</h2>
+      <p>Hey there! I'm Ryan Oh, a full-stack Software Engineer from the beautiful island of Guam.</p>
+    </div> 
+    <div>
+      <img id="headshot" src="images/face shot.png" alt="">
+    </div>
+  </section>
+  <section id="my-projects">
+    <h2>Projects</h2>
+    <div id="project-list">
+      <div class="project">
+        <img id="project-img" src="images/build app.png" alt="">
+        <h3>Build App</h3>
+        <p class="project-text">App to record and monitor exercise for efficient progress tracking and goal attainment.</p>
+        <p class="project-text">Technologies used: MERN Stack, Heroku</p>
+        <div class="hr">
+          <hr />
+          <p class="project-text"><a class="project-link" href="https://workout-log-app-172e14242751.herokuapp.com/" target="_blank">view here</a></p>
+        </div>
+      </div>
+      <div class="project">
+        <img id="project-img" src="images/macro counter.png" alt="">
+        <h3>Macro Counter</h3>
+        <p class="project-text">App to track food, create meals, and manage daily macronutrients to achieve dietary goals effectively.</p>
+        <p class="project-text">Technologies used: Python, Django, VS Code, Trello, Github</p>
+        <div class="hr">
+          <hr />
+          <p class="project-text"><a class="project-link" href="https://macrocounter-8ca2ea342aae.herokuapp.com/" target="_blank">view here</a></p>
+        </div>
+      </div>
+      <div class="project">
+        <img id="project-img" src="images/brew nation.png" alt="">
+        <h3>Brew Nation</h3>
+        <p class="project-text">Add breweries, check-in, and submit reviews.</p>
+        <p class="project-text">Technologies used: Javascript, Express.js, MongoDB, Trello, Github</p>
+        <div class="hr">
+          <hr />
+          <p class="project-text"><a class="project-link" href="https://breweries-reviews-project.herokuapp.com/" target="_blank">view here</a></p>
+        </div>
+      </div>
+      <div class="project">
+        <img id="project-img" src="images/blackjack.png" alt="">
+        <h3>Blackjack</h3>
+        <p class="project-text">Fully accessible and enjoyable Blackjack browser game.</p>
+        <p class="project-text">Technologies used: HTML, CSS, JavaScript, VS Code, Trello, Github, GH-pages</p>
+        <div class="hr">
+          <hr />
+          <p class="project-text"><a class="project-link" href="https://ryanoh671.github.io/Blackjack/" target="_blank">view here</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <h2>Contact me</h2>
+    <p>ryanoh671@gmail.com</p>
+  </footer>
+
+  <!-- <div class="" id="about-me">
   </div>
   <div class="" id="my-history">
-    <button class='btn btn-dark' id="education-btn">Education</button>
-    <button class='btn btn-dark' id="work-btn">Work</button>
+    <button class='btn btn-light' id="education-btn">Education</button>
+    <button class='btn btn-light' id="work-btn">Work</button>
     <div id="history-details">
       <div id="education" style="display:none;">
-        <div class="" id="ed1">
-          <h4>Software Engineering</h4>
-          <h5>@General Assembly</h5>
+        <div id="ed1">
+          <h5>Software Engineering</h5>
+          <h6>@General Assembly</h6>
           <p>2023</p>
         </div>
         <div id="ed2">
-          <h4>Bachelor in Business Economics</h4>
-          <h5>@UC Irvine</h5>
+          <h5>Bachelor in Business Economics</h5>
+          <h6>@UC Irvine</h6>
           <p>2015</p>
         </div> 
       </div>
       <div id="work" style="display:none;">
-        <h4>Senior Accountant</h4>
-        <h5>@Zen Beverage LLC</h5>
-        <p>2020-2023</p>
-        <h4>Personal Trainer:</h4>
-        <h5>@MK FItness LLC</h5>
-        <p>2020-2023</p>
+        <div>
+          <h5>Senior Accountant</h5>
+          <h6>@Zen Beverage LLC</h6>
+          <p>2020-2023</p>
+        </div>
+        <div>
+          <h5>Personal Trainer:</h5>
+          <h6>@MK FItness LLC</h6>
+          <p>2020-2023</p>
+        </div>
       </div>
-  </div>
-  </div>
+    </div>
+  </div> -->
+  <!-- <footer>
+    <div id="icons">
+      <a href="https://www.linkedin.com/in/ryan-oh-dev/" target="_blank">
+        <img src="images/linkedin icon.png" alt="">
+      </a>
+      &nbsp;  
+      <a href="https://github.com/ryanoh671" target="_blank">
+        <img src="images/github icon.png" alt="">
+      </a>
+    </div>
+  </footer> -->
 </body>
 </html> 
+
