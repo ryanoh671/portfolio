@@ -40,26 +40,25 @@ p {
 }
 
 #about-me-btn:hover {
-  background-color: rgb(185, 185, 185);
+  transform: scale(1.1);
 }
 
 #about-me-btn > a {
   text-decoration: none;
-  color: rgb(83, 83, 83);
+  color: black;
   font-size: 20px;
 }
 
 #about-me-btn > a:hover {
-  /* color: blue; */
+  color: black;
 }
 
 #icons {
-  /* float: right; */
   margin-top: 15px;
 }
 
 #icons > a > img {
-  width: 3vmin;
+  width: 30px;
 }
 
 #icons > a > img:hover {
@@ -141,27 +140,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
-
-/* 
-
-#about-me-details {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: black;
-  width: 100%;
-  padding: 0 10px 10px 10px;
-  margin: 50px auto;
-  border-radius: 15px;
-}
-
-#about-me > img {
-  display: block;
-  margin: 0 auto;
-  width: 20vmin;
-  border-radius: 50%;
-  opacity: .9;
-} */
 
 ul {
   list-style-type: none;
@@ -187,13 +166,12 @@ li a {
 }
 
 li a:hover {
-  /* background-color: #f4f4f4; */
   text-decoration: none;
-  color: rgb(136, 136, 136);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1280px) {
-  #name-title {
+  #header-info {
     margin-left: 10px;
   }
   #project-list {
@@ -218,77 +196,6 @@ li a:hover {
     margin-top: 20px;
   }
 }
-
-
-
-/* #project-img {
-  width: 20%;
-  box-shadow: 7px 7px 5px #7b7b7b;
-  margin-bottom: 100px;
-}
-
-#project-info {
-  text-align: center;
-  padding: 50px;
-}
-
-
-#icons {
-  float: right;
-  margin: 10px 20px;
-}
-
-#icons > a > img {
-  width: 3vmin;
-}
-
-#icons > a > img:hover {
-  transform: scale(1.2);
-}
-
-#icons:hover > a {
-  text-decoration: none;
-}
-
-footer {
-  width: 100%;
-  display: block;
-  position: fixed;
-  bottom: 0;
-}
-
-#my-history {
-  text-align: center;
-}
-
-
-#work {
-  display: none;
-}
-
-#uci {
-  width: 20vmin;
-}
-
-#ga {
-  width: 23vmin;
-  margin: 15px 0 0 0;
-}
-
-#resume-link {
-  text-decoration: none;
-  color: black;
-}
-
-
-#resume {
-  width: 3vmin;
-}
-
-.card {
-  width: 30vmin;
-  margin: 0 auto;
-} */
 
 .hamburger {
   display: none;
