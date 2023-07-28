@@ -4,21 +4,21 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-#name-title {
-  margin-left: 80px;
-  margin-bottom: 200px;
-}
-
 #hero {
-  background-color: rgb(59, 37, 37);
+  background-color: rgb(40, 61, 90);
 }
 
-#name-div {
+#header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
   color: white;
+}
+
+#header-info {
+  margin-left: 80px;
+  margin-bottom: 200px;
 }
 
 h1 {
@@ -32,6 +32,44 @@ p {
   font-weight: 300;
 }
 
+#about-me-btn {
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 15px;
+  padding: 7px;
+}
+
+#about-me-btn:hover {
+  background-color: rgb(185, 185, 185);
+}
+
+#about-me-btn > a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-size: 20px;
+}
+
+#about-me-btn > a:hover {
+  /* color: blue; */
+}
+
+#icons {
+  /* float: right; */
+  margin-top: 15px;
+}
+
+#icons > a > img {
+  width: 3vmin;
+}
+
+#icons > a > img:hover {
+  transform: scale(1.2);
+}
+
+#icons:hover > a {
+  text-decoration: none;
+}
+
 #about-me {
   display: flex;
   justify-content: space-around;
@@ -41,8 +79,12 @@ p {
 #my-projects {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding: 80px;
+}
+
+#my-projects > h2 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 #headshot {
@@ -88,9 +130,18 @@ p {
   color: rgb(123, 136, 235);
 }
 
+.project-link:hover{
+  color: rgb(8, 30, 91);
+}
+
 footer {
-  height: 200px;
+  height: 180px;
   text-align: center;
+  background-color: rgb(40, 61, 90);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 /* 
@@ -119,6 +170,10 @@ ul {
   overflow: hidden;
 }
 
+ul.show {
+  display: block;
+}
+
 li {
   float: left;
 }
@@ -132,9 +187,9 @@ li a {
 }
 
 li a:hover {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(136, 136, 136);
 }
 
 @media only screen and (max-width: 1280px) {
@@ -163,6 +218,8 @@ li a:hover {
     margin-top: 20px;
   }
 }
+
+
 
 /* #project-img {
   width: 20%;
@@ -232,3 +289,34 @@ footer {
   width: 30vmin;
   margin: 0 auto;
 } */
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    float: right;
+  }
+  
+  ul {
+    display: none;
+  }
+  
+  
+  li {
+    float: right;
+  }
+  
+  nav {
+    background-color: rgb(83, 104, 141);
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+}

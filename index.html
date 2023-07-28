@@ -10,24 +10,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <script defer src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/2bd99775c7.js" crossorigin="anonymous"></script>
+  <script defer src="js/app.js"></script>
 </head>
 <body>
   <section id="hero">
     <nav>
-      <div>
-        <ul id="nav">
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#my-projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <button class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul id="nav-list">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#my-projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <div id="name-div">
-      <div id="name-title">
+    <div id="header">
+      <div id="header-info">
         <h1>Ryan Oh</h1>
         <p>Full Stack Developer</p>
-        <button><a href="#about-me">About me</a></button>
+        <button id="about-me-btn"><a href="#about-me">About me</a></button>
+        <div id="icons">
+          <a href="https://www.linkedin.com/in/ryan-oh-dev/" target="_blank">
+            <img src="images/linkedin icon.png" alt="">
+          </a>
+          <a href="https://github.com/ryanoh671" target="_blank">
+            <img src="images/github icon.png" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -88,6 +98,7 @@
   <footer id="contact">
     <h2>Contact me</h2>
     <p>ryanoh671@gmail.com</p>
+    <p>(310)849-2180</p>
   </footer>
 
   <!-- <div class="" id="about-me">
