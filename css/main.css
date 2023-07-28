@@ -1,5 +1,5 @@
 body {
-  background-image: url("images/white\ background.png");
+  background-image: url("../images/white\ background.png");
   background-size: cover;
   background-position: center;
 }
@@ -30,7 +30,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #e9e9e9;
+  /* background-color: #ffffff; */
 }
 
 li {
@@ -48,6 +48,7 @@ li a {
 li a:hover {
   background-color: #f4f4f4;
   text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 #project-img {
@@ -101,4 +102,26 @@ footer {
 
 #work {
   display: none;
+}
+
+#uci {
+  width: 20vmin;
+}
+
+#ga {
+  width: 23vmin;
+  margin: 15px 0 0 0;
+}
+
+#resume-link {
+  text-decoration: none;
+  color: black;
+}
+
+#resume-link:hover {
+  /* color: blue; */
+}
+
+#resume {
+  width: 3vmin;
 }
