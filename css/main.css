@@ -134,7 +134,8 @@ p {
 }
 
 footer {
-  height: 180px;
+  height: 100%;
+  padding-bottom: 15px;
   text-align: center;
   background-color: rgb(40, 61, 90);
   color: white;
@@ -168,6 +169,17 @@ li a {
 li a:hover {
   text-decoration: none;
   transform: scale(1.1);
+}
+
+#pdf-img {
+  width: 20px;
+}
+
+#resume-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px auto;
 }
 
 @media only screen and (max-width: 1280px) {
